@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@5/dark.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Dental</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#formSection">Daftar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kata-kata">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Section with Image -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Jaga kesehatan gigi anda</h2>
+            <img class="foto1" src="assets/WhatsApp Image 2024-02-15 at 16.32.21_23adca8b.jpg" alt="Foto">
+        </div>
+    </section>
+
+    <!-- New Section -->
+    <section id="kata-kata" class="py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h3>Mengapa kesehatan gigi penting ?</h3>
+            <p class="lead">Menurut data FDI World Dental Federation dalam Oral Health Atlas edisi 2 tahun 2015,  3,9 miliar orang di seluruh dunia terjangkit penyakit di area mulut.
+
+                Nah, sementara kasus kerusakan gigi yang tidak diobati (karies gigi) menyentuh hampir setengah dari populasi dunia (44%). 
+                
+                Dampak dari kerusakan gigi pun sangat besar, baik bagi orang dewasa dan anak-anak. Orang dewasa yang memiliki gangguan gusi dan mulut dapat mengalami penurunan kinerja.
+                
+                Bahkan bisa membuat tidak percaya diri sampai terkena penyakit kronis. Sementara itu, pada anak-anak dapat menyebabkan gangguan tidur dan keterlambatan pertumbuhan.</p>
+            <a href="#formSection" class="btn btn-light btn-lg mt-3">Obati Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="formSection" class="py-5 bg-light">
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title mb-4">Daftar</h1>
+                    <p class="card-text">Isi formulir di bawah untuk mendapatkan perawatan</p>
+                    <form class="row g-3">
+                        <div class="col-6">
+                          <label for="nama" class="form-label">Nama</label>
+                          <input type="text" class="form-control" id="nama" placeholder="Masukkan Nama" required>
+                        </div>                
+                        <div class="col-6">
+                            <label for="usia" class="form-label">Usia</label>
+                            <input type="number" class="form-control" id="usia" placeholder="masukkan usia" required>
+                        </div>
+                        
+                        
+                        <div class="col-6">
+                            <label for="tanggal" class="form-label">Tanggal</label>
+                            <input type="date" class="form-control" id="tanggal" placeholder="Pilih Tanggal" required>
+                        </div>
+
+                        <div class="col-6">
+                            <label for="Keluhan" class="form-label">Keluhan</label>
+                            <select class="form-select" id="Keluhan" required>
+                            <option selected>Pilih Keluhan</option>
+                            <option value="Gigi berlubang">Gigi berlubang</option>
+                            <option value="Gusi bengkak">Gusi bengkak</option>
+                            <option value="Karang gigi">Karang gigi</option>
+                            <option value="Cabut gigi">Cabut gigi</option>
+                            <option value="Perawatan berskala">Perawatan berskala</option>
+                            <option value="Pasang bahel">Pasang bahel</option>
+                            </select>
+                        </div>
+                        </div>
+                        
+                        <div class="btn">
+                            <button type="button" onclick="handleSubmission()" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="py-4 bg-dark text-white-50 text-center">
+        <div class="container">
+            <p>&copy; 2024 Adventure. All rights reserved.</p>
+            <p>Email: contact@adventure.com | Phone: +123 456 7890</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="/script/main.js"></script>
+</body>
+</html>
